@@ -1,6 +1,6 @@
 % ----------------------------------------------------------------------------
 % thesis.tex:	Template for Master Thesis and PhD Dissertation
-%             Northeastern University, Electrical and Computer Engineering
+%             Northeastern University, Electrical and Computer Engineering (Update to your home department)
 %
 % This document contains embedded instructions. Each instruction line starts
 % with "%%", conversely code options to enable, only start with a single "%"
@@ -13,62 +13,71 @@
 %% PHD    -- PhD Dissertation (default: MS Thesis)
 %% draft  -- label as draft version (default: final)
 %% Remove [PHD] if MS Thesis
-\documentclass[]{macro/neu_msthesis}
+\documentclass[PHD]{macro/neu_msthesis}
 
 % --- Global Definitions for title and others ---
 
-%% define thesis title
-\title{Super-Convincing Thesis Title}
+%% Enter thesis title
 
-%% define thesis author
+\title{Super-Convincing Thesis/Dissertation Title}
+
+%% Enter thesis author
+
 \author{Hubert Husky}
+
 \nuid{123456789}
 
 %% department name
-\dept{Electrical and Computer Engineering}
+
+\dept{Electrical and Computer Engineering (Update to your home department)}
 
 %% degree name if not "Master of Science" or "Doctor of Philosophy"
 %% should not be needed
 %\degree{My Custom Degree Name}
 
 %% area of degree
-%% will be used on degree page:
+%% will be used on degree page, change as instructed below:
 %% For MS students "Electrical and Computer Engineering"
 %% For PhDEE students "Electrical Engineering"	
 %% For PhDCE students "Computer Engineering"
-\degreename{Electrical and Computer Engineering}
+
+\degreename{Electrical and Computer Engineering (Update to your degree name)}
 
 %% General field in which degree is obtainded (usually same as \degreename{})
-\field{Electrical and Computer Engineering}
+
+\field{Electrical and Computer Engineering (Update to your degree field)}
 
 %% Define month when submitted (START writing early or it will be very soon too late :-) )
 %% Use full name for months
+
 \submitdate{December 2014}
 
-%% how many committee members (including adviser, put a number between 3 and 6)
-\numberofmembers{3}
+%Although the template does not generate the signature page, leave the following 13 lines unchanged!
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DO NOT CHANGE BELOW (From here) %%%%%%%%%%%%%%%%%%%%%%%%
+% how many committee members (including adviser, put a number between 3 and 6)
+\numberofmembers{3}
 %% Define committee member names, except for the advisor, all other names come in alphabetical order (last name)
 \principaladviser{Dr. Advisor}
 \firstreader{Dr. First Member}
 \secondreader{Dr. Second Member}
-
 \thirdreader{Dr. Third Member}
 \fourthreader{Dr. Fourth Member}
 \fifthreader{Dr. Fifth Member}
-
 %% name chair of department
-\chairman{Dr. Sheila S. Hemami}
-
+\chairman{Dr. Miriam Leeser}
 %% name of director graduate school
-\dean{Dr. Sara Wadia-Fascetti}
+\dean{Dr. Waleed Meleis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DONOT CHANGE ABOVE (TO HRE) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% all user defined macros
-%% outsourced conveniently to keep this file clean
+% all user defined macros
+% outsourced conveniently to keep this file clean
+
 \input{macro/macro}
 
 
 % --- begin of document ---
+
 \begin{document}
 
 % add a pdf bookmark to the cover page
@@ -79,12 +88,14 @@
 
 % --- front matter ---
 \begin{frontmatter}
-% print signature page
-\signaturepage
+% %%%%%% NO SIGNATURE PAGE WILL BE GENERATED, PLEASE DOWNLOAD FROM COE WEB SITE (READ file Readme.pdf in this folder!)
+%\signaturepage
 % dedication
+
 \input{tex/dedication.tex}
 
 % table of content (add bookmark for convenience)
+
 \pdfbookmark[1]{Table of Contents}{contents}
 \tableofcontents
 \listoffigures

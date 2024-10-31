@@ -117,7 +117,7 @@
 % type of manuscript submitted
 \newcommand\@workType{}
 
-% string describing the role of committee members 
+% string describing the role of committee members
 \newcommand\@committeeRole{}
 
 \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
@@ -177,7 +177,7 @@
 \renewcommand\@committeeRole{Committee Member}
 \else
 \renewcommand\@workType{Thesis}
-\renewcommand\@committeeRole{Committee Member or Reader}
+\renewcommand\@committeeRole{Committee Member}
 \fi
 
 % make hyperref happy and define the page height
@@ -434,7 +434,7 @@
     \bigskip
     THESIS\\
     \bigskip \bigskip \bigskip
-    submitted in partial satisfaction of the requirements \\
+    submitted in partial fullfilment of the requirements \\
     for the degree of \\
     \bigskip \bigskip \bigskip
     {\expandafter\uppercase\expandafter{\@degree}} \\
@@ -485,7 +485,7 @@
 \newcommand{\signatureB}[2]{%
 	\begin{minipage}{6.5in}
 	% \parindent=0.5in
-	\begin{tabular}{p{0.38\textwidth}cc}
+	\begin{tabular}{p{0.44\textwidth}cc}
 	#1 &~&\\
 	#2 & \hbox {\shortstack{\vrule width 1.4in height 0.4pt}} & \hbox
 	{\shortstack{\vrule width 0.8in height 0.4pt}} \hfil \\ [-6pt]
@@ -510,7 +510,8 @@
 			{\bf \expandafter{\@workType} Title:} & \expandafter{\@title} \\[4pt]
 			%{\bf Author:} & \expandafter{\@author} \hspace{1.5cm} \\[4pt]
 			%{\bf NUID:} & \@nuid \\[4pt]
-			{\bf Author:} & \expandafter{\@author} \hspace{1.5cm} \hfil {\bf NUID:} \hspace{6pt} \@nuid \\[4pt]
+			{\bf Author:} & \expandafter{\@author}% \hspace{1.5cm} \hfil {\bf NUID:} \hspace{6pt} \@nuid \\[4pt]
+            \hfill {\bf NUID:} \hspace{6pt} \@nuid \\[4pt]
 			{\bf Department:} & \@dept \\[4pt]
 		\end{tabular}
   \end{minipage}      	
@@ -543,7 +544,7 @@
 	\signatureB{Department Chair}{\@chairman}
 	\\ % [-10pt]
 	\\ [15pt]
-  \signatureB{Associate Dean of Graduate School:}{\@dean}
+  \signatureB{Senior Associate Dean for Academic Affairs}{\@dean}
 	\newpage
 
 }

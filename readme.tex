@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage[lucidasmallscale=true,nofontinfo=true]{lucimatx}
+\renewcommand\labelitemi{$\bullet$}
+\DeclareMathAlphabet{\mathcall}{OMS}{pxsy}{m}{n}%
+% For \mathscr use 1) either the following 4 lines
+\DeclareFontEncoding{FMS}{}{}%
+\DeclareFontSubstitution{FMS}{futm}{m}{n}%
+\input fmsfutm.fd%
+\DeclareMathAlphabet{\mathscr}{FMS}{futm}{m}{n}%
+\usepackage{xcolor,graphicx}
+\usepackage{fullpage}
+\usepackage[colorlinks]{hyperref}
+\definecolor{seablue}{rgb}{0,0.2,0.95}
+\hypersetup{
+    linkcolor = {seablue},
+    }
+\usepackage{enumerate}
+\usepackage{microtype}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{document}
+\begin{center}
+\textbf{{\Large
+Department of Electrical and Computer Engineering\\ [12pt]
+MS Thesis/PhD Dissertation Template Instructions}}
+\end{center}
+
+\vspace*{1cm}
+
+%\section{Instructions}
+\noindent Here you find the MS thesis and PhD dissertation \LaTeX\ templates for the ECE Department, Northeastern University.
+
+\begin{enumerate}
+\item The same template is used for MS thesis and PhD dissertation. By default, an MS thesis is produced. To change to a PhD Dissertation modify the file thesis.tex and change the line:
+
+$\backslash${documentclass}[~]\{macro/neu\_msthesis\}
+
+to
+
+$\backslash${documentclass}[PHD]\{macro/neu\_msthesis\}
+
+%The examples for MS Thesis (see Section 2) and PhD Dissertation (see Section 3) have been build using this template.
+
+\item The file thesis.tex allows easy configuration of all common aspects of the
+thesis/dissertation. Examples include: author name, title, etc. Please see the definitions and descriptions in thesis.tex. \textcolor[rgb]{1.00,0.00,0.00}{\textbf{Please note that this template DOES NOT generate the signature page!}} To get the signature page you need to download them from the following links, complete them and include in the final version of your thesis or dissertation.
+
+MS: www.coe.neu.edu/sites/default/files/pdfs/coe/gse/ThesisSignature.pdf
+
+PhD: www.coe.neu.edu/sites/default/files/pdfs/coe/gse/DissertationSignature.pdf
+
+\item Please put all style files that you need to use in the macro folder and call
+them using the macro.tex file in this folder.
+
+\item All latex source files corresponding to different chapters go in the tex folder. All figures go in the fig folder and all bibliography-related files in the bib folder.
+
+\item Both pdf and eps graphics can be used; although pdf is preferable. If eps files are used, they will be converted to pdf on the fly. It is recommended that you run your source file with pdflatex (alternatively you can use latex+dvips+ps2pdf but you should be aware that this path cannot handle pdf graphics files.)
+
+\item You need to run bibtex and makeindex to generate the bibliography and
+the index.
+
+\item CTAN (the Comprehensive \TeX Archive Network) is the source of almost everything that you need for your thesis. You can access CTAN at
+www.ctan.org. The following packages are needed, if you do not
+already have them, make sure to download them from CTAN and put
+them in a path that your \LaTeX implementation can find them:
+\begin{itemize}
+
+\item  amsfonts
+
+\item  amssymb
+
+\item  amsmath
+
+\item  times
+
+\item  bm
+
+\item multirow
+
+\item  makeidx
+
+\item  acronym
+
+\item url
+
+\item  graphicx
+
+\item  epstopdf
+
+\item  hyperref
+
+\item microtype
+
+\end{itemize}
+
+\item A great (in my opinion) and free integrated \LaTeX environment for Windows is TeXnic-Center (download from www.texniccenter.org).
+    A great help for writing \LaTeX can be found  at\\ en.wikibooks.org/wiki/LaTeX
+
+\end{enumerate}
+
+Enjoy the writing!
+
+\end{document} 
