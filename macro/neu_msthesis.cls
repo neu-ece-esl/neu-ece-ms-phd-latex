@@ -644,7 +644,7 @@ by \\
 \@author \\
 {\@degree} in {\@field} \\
 Northeastern University, {\@submitdate} \\
-{\@principaladviser}, Adviser} \\
+{\@principaladviser}, Advisor} \\
 \end{center}
 \medskip}}
 
