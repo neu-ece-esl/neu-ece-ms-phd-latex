@@ -1,4 +1,4 @@
-# MS thesis and PhD dissertation LaTeX templates for the ECE Department, Northeastern University.
+# MS Thesis and PhD Dissertation LaTeX Templates, [COE](https://coe.northeastern.edu/), Northeastern University [^1]
 
 
 The same template is used for MS thesis and PhD dissertation. By default, an MS thesis is produced. To change to a PhD Dissertation modify the file thesis_dissertation.tex and change the line:
@@ -30,3 +30,6 @@ For editing / compilation, you can use the online LaTeX platform [overleaf](http
 The [LaTeX WikiBooks](https://en.wikibooks.org/wiki/LaTeX) is a great resource about syntax and tricks. 
 
 To compile locally, check out [The LaTeX Project](https://www.latex-project.org/get/). [latexmk](https://github.com/debian-tex/latexmk), avaiable for many Linux systems, is convenient for  LaTeX compilation on a Linux system. The Makefile in this template is horribly outdated (it refers to SVN ...).   
+
+
+[^1]: Source: https://github.com/neu-ece-esl/neu-ece-ms-phd-latex
