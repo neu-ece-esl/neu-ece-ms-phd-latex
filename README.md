@@ -19,7 +19,7 @@ The main template file allows easy configuration of all common aspects of the th
 
 **Please note that this template DOES NOT generate the signature page!**
 
-You need to download the signature page ([MS](www.coe.neu.edu/sites/default/files/pdfs/coe/gse/ThesisSignature.pdf), [PhD](www.coe.neu.edu/sites/default/files/pdfs/coe/gse/DissertationSignature.pdf)), complete them and then include in the final version of your thesis or dissertation.
+The signature page is generated through a separate form process including getting electronic signatures. Please see the instructions on COE's web page: [PhD Dissertation/MS Thesis Instructions](https://coe.northeastern.edu/academics-experiential-learning/graduate-school-of-engineering/graduate-student-services/dissertation-thesis-instructions/).
 
 Please put all style files that you need to use in the macro folder and call them using the macro.tex file in this folder.
 
